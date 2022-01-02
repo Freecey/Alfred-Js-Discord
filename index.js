@@ -1,8 +1,8 @@
 const { Client, VoiceChannel, MessageEmbed } = require("discord.js");
-
+require("dotenv").config();
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args))
 
-const PREFIX = '!a'
+const PREFIX = process.env.PREFIX
 const client = new Client({
     intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MESSAGE_REACTIONS", "GUILD_VOICE_STATES"]
 });
@@ -116,6 +116,4 @@ client.on('messageCreate', async message => {
 
 });
 
-
-
-client.login('OTI2OTkxNjY5OTM1NjM2NTAw.YdDuRA.NFdVXNpEuuY2tgIPpEOGcHYqNE8');
+client.login(`${process.env.CLIENT_TOKEN}`);
