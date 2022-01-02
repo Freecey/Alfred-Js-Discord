@@ -1,0 +1,22 @@
+{
+  "name": "alfred-js-discord",
+  "version": "0.0.1",
+  "description": "Discord Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.yana.xyz:cedric/alfred-js-discord.git"
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "Cedric AUDRIT",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^13.5.0"
+  }
+}
